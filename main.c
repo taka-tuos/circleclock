@@ -368,12 +368,12 @@ void gfxDrawScreen(void)
 	
 	gfxDrawParticle(bfms);
 	
-	for(int i = 0; i < 6; i++) gfxDrawSegment(&g_ClockLED[i], 732.0f/6.0f*(float)i + 20.0f + (i / 2) * 24.0f, 176, 128);
+	for(int i = 0; i < 6; i++) gfxDrawSegment(&g_ClockLED[i], 732.0f/6.0f*(float)i + 40.0f + (i / 2) * 24.0f, 176, 128);
 	for(int i = 0; i < 2; i++) {
-		gfxDrawCircle(732.0f/6.0f*(i+1)*2+7.0f + i * 24.0f, 176 + 32, 128.0f/12.0f+2, 0,0,0);
-		gfxDrawCircle(732.0f/6.0f*(i+1)*2+7.0f + i * 24.0f, 176 + 96, 128.0f/12.0f+2, 0,0,0);
-		gfxDrawCircle(732.0f/6.0f*(i+1)*2+7.0f + i * 24.0f, 176 + 32, 128.0f/12.0f, 1,1,1);
-		gfxDrawCircle(732.0f/6.0f*(i+1)*2+7.0f + i * 24.0f, 176 + 96, 128.0f/12.0f, 1,1,1);
+		gfxDrawCircle(732.0f/6.0f*(i+1)*2+7.0f + i * 24.0f+20.0f, 176 + 32, 128.0f/12.0f+2, 0,0,0);
+		gfxDrawCircle(732.0f/6.0f*(i+1)*2+7.0f + i * 24.0f+20.0f, 176 + 96, 128.0f/12.0f+2, 0,0,0);
+		gfxDrawCircle(732.0f/6.0f*(i+1)*2+7.0f + i * 24.0f+20.0f, 176 + 32, 128.0f/12.0f, 1,1,1);
+		gfxDrawCircle(732.0f/6.0f*(i+1)*2+7.0f + i * 24.0f+20.0f, 176 + 96, 128.0f/12.0f, 1,1,1);
 	}
 	
 	char sz[256];
